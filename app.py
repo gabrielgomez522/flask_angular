@@ -15,7 +15,7 @@ app.config['MYSQL_USER'] = 'root'
 app.config['MYSQL_PASSWORD'] = 'admin'
 app.config['MYSQL_DB'] = 'BucketList'
 
-@app.route("/", methods=['POST'])
+@app.route("/")
 def main():
 	return render_template('index.html')
 
@@ -109,4 +109,4 @@ def validateLogin():
 
 if __name__ == "__main__":
     app.debug = True
-    app.run(port=5000)
+    app.run(port=8000)
